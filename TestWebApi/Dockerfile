@@ -21,7 +21,27 @@
 #COPY --from=publish /app/publish .
 #ENTRYPOINT ["dotnet", "TestWebApi.dll"]
 
-FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build-env
+#FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build-env
+#WORKDIR /app
+#
+#COPY *.csproj .
+#
+#RUN dotnet restore
+#
+#COPY . ./
+#
+#RUN dotnet publish --no-restore -c Release -o out
+#
+#RUN mcr.microsoft.com/dotnet/aspnet:3.1
+#WORKDIR /app
+#
+#COPY --from=build-env /app/out .
+#
+#ENTRYPOINT ["dotnet", "TestWebApi.dll"]
+
+
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
+
 WORKDIR /app
 
 COPY *.csproj .
@@ -32,9 +52,7 @@ COPY . ./
 
 RUN dotnet publish --no-restore -c Release -o out
 
-RUN mcr.microsoft.com/dotnet/aspnet:3.1
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
-
 COPY --from=build-env /app/out .
-
 ENTRYPOINT ["dotnet", "TestWebApi.dll"]
