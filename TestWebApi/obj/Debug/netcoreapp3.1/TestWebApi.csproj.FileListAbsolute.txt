@@ -8,7 +8,6 @@ D:\x_Projects\NETcoreWeb\TestWebApi\TestWebApi\TestWebApi\bin\Debug\netcoreapp3.
 D:\x_Projects\NETcoreWeb\TestWebApi\TestWebApi\TestWebApi\bin\Debug\netcoreapp3.1\TestWebApi.pdb
 D:\x_Projects\NETcoreWeb\TestWebApi\TestWebApi\TestWebApi\bin\Debug\netcoreapp3.1\TestWebApi.Views.dll
 D:\x_Projects\NETcoreWeb\TestWebApi\TestWebApi\TestWebApi\bin\Debug\netcoreapp3.1\TestWebApi.Views.pdb
-D:\x_Projects\NETcoreWeb\TestWebApi\TestWebApi\TestWebApi\obj\Debug\netcoreapp3.1\TestWebApi.csprojAssemblyReference.cache
 D:\x_Projects\NETcoreWeb\TestWebApi\TestWebApi\TestWebApi\obj\Debug\netcoreapp3.1\TestWebApi.AssemblyInfoInputs.cache
 D:\x_Projects\NETcoreWeb\TestWebApi\TestWebApi\TestWebApi\obj\Debug\netcoreapp3.1\TestWebApi.AssemblyInfo.cs
 D:\x_Projects\NETcoreWeb\TestWebApi\TestWebApi\TestWebApi\obj\Debug\netcoreapp3.1\TestWebApi.csproj.CoreCompileInputs.cache
